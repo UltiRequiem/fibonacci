@@ -5,13 +5,17 @@
 ![Lines Of Code](https://img.shields.io/tokei/lines/github.com/UltiRequiem/fibonacci-deno?color=blue&label=Total%20Lines)
 ![CodeQL](https://github.com/UltiRequiem/fibonacci-deno/workflows/CodeQL/badge.svg)
 
-Port of [fibonacci-go](https://github.com/UltiRequiem/fibonacci) for [Deno](https://deno.land).
+Port of [fibonacci-go](https://github.com/UltiRequiem/fibonacci) for
+[Deno](https://deno.land).
 
 > Utilities for the Fibonacci Number and Sequence
 
 ## Usage
 
-This package exposes two Functions, [fibonacci](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L1) and [fibonacciSequence](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L15).
+This package exposes two Functions,
+[fibonacci](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L1)
+and
+[fibonacciSequence](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L15).
 
 ```typescript
 import {
@@ -63,4 +67,5 @@ $ fibonacci --number 3
 
 ### License
 
-[This package](https://deno.land/x/fibonacci) is licensed under the [MIT License](./LICENSE.md).
+[This package](https://deno.land/x/fibonacci) is licensed under the
+[MIT License](./LICENSE.md).
