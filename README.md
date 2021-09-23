@@ -61,8 +61,8 @@ $ fibonacci --number 3
 - Get an Array with the first N numbers of the Fibonacci Sequence:
 
 ```bash
-$ fibonacci --number 3
-2
+$ fibonacci --sequence 3
+[ 0, 1, 1 ]
 ```
 
 ### License
