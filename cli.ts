@@ -3,14 +3,16 @@ import { parse } from "https://deno.land/std/flags/mod.ts";
 import { fibonacci, fibonacciSequence } from "./mod.ts";
 
 function Exec() {
-  const { number, sequence } = parse(Deno.args);
+  const { number, sequence, help } = parse(Deno.args);
 
-  if (!number && !sequence) {
-    const help = `Options:
+  if (!number && !sequence || help) {
+    const helpMessage = `Options:
   --number    Print the Nth Fibonacci Number                                    
-  --sequence  Print an array with the first N numbers in the Fibonacci sequence`;
+  --sequence  Print an array with the first N numbers in the Fibonacci sequence
+  --help      Print this`;
 
-    console.log(help);
+    console.log(helpMessage);
+
     return;
   }
 

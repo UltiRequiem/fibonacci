@@ -8,7 +8,7 @@
 Port of [fibonacci-go](https://github.com/UltiRequiem/fibonacci) for
 [Deno](https://deno.land).
 
-> Utilities for the Fibonacci Number and Sequence
+> Utilities for the Fibonacci Number and Sequence.
 
 ## Usage
 
