@@ -4,12 +4,20 @@
   "entry": "./mod.ts",
   "description": "🦕 Fibonacci Number and Sequence Utilities",
   "homepage": "https://github.com/UltiRequiem/fibonacci-deno",
-  "version": "v1.0.0",
+  "version": "1.0.0",
   "releaseType": "patch",
   "unstable": false,
   "unlisted": false,
-  "files": ["mod.ts", "cli.ts", "README.md"],
-  "ignore": [".vim", ".github", ".git"],
+  "files": [
+    "mod.ts",
+    "cli.ts",
+    "README.md"
+  ],
+  "ignore": [
+    ".vim",
+    ".github",
+    ".git"
+  ],
   "checkFormat": "deno fmt",
   "checkTests": "deno test",
   "checkInstallation": true,

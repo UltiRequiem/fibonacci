@@ -10,6 +10,8 @@ Port of [fibonacci-go](https://github.com/UltiRequiem/fibonacci) for
 
 > Utilities for the Fibonacci Number and Sequence.
 
+You can get this package by [nest.land](https://nest.land/package/fibonacci) or [deno.land](https://deno.land/x/fibonacci).
+
 ## Usage
 
 This package exposes two Functions,
