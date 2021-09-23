@@ -1,5 +1,4 @@
-import {
-  fibonacci,
+import fibonacci, {
   fibonacciSequence,
 } from "https://deno.land/x/fibonacci/mod.ts";
 

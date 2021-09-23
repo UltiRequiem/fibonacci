@@ -3,7 +3,7 @@
  * @param n The Nth Fibonacci Number you want to get
  * @returns The Nth Fibonacci Number
  */
-export function fibonacci(n: number): number {
+export default function fibonacci(n: number): number {
   if (n < 0) {
     throw new Error(`Expected a number bigger than zero, but got ${n}.`);
   }

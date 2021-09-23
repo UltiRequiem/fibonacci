@@ -4,7 +4,7 @@
   "entry": "./mod.ts",
   "description": "🦕 Fibonacci Number and Sequence Utilities",
   "homepage": "https://github.com/UltiRequiem/fibonacci-deno",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "releaseType": "patch",
   "unstable": false,
   "unlisted": false,

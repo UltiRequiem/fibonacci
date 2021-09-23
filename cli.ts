@@ -1,6 +1,6 @@
 import { parse } from "https://deno.land/std/flags/mod.ts";
 
-import { fibonacci, fibonacciSequence } from "./mod.ts";
+import fibonacci, { fibonacciSequence } from "./mod.ts";
 
 function Exec() {
   const { number, sequence, help } = parse(Deno.args);
@@ -9,7 +9,8 @@ function Exec() {
     const helpMessage = `Options:
   --number    Print the Nth Fibonacci Number                                    
   --sequence  Print an array with the first N numbers in the Fibonacci sequence
-  --help      Print this`;
+  --help      Print this
+For more help check https://github.com/UltiRequiem/fibonacci-deno`;
 
     console.log(helpMessage);
 
@@ -28,7 +29,6 @@ function Exec() {
 
   if (sequence) {
     console.log(fibonacciSequence(sequence));
-    return;
   }
 }
 

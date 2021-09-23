@@ -10,7 +10,8 @@ Port of [fibonacci-go](https://github.com/UltiRequiem/fibonacci) for
 
 > Utilities for the Fibonacci Number and Sequence.
 
-You can get this package by [nest.land](https://nest.land/package/fibonacci) or [deno.land](https://deno.land/x/fibonacci).
+You can get this package by [nest.land](https://nest.land/package/fibonacci) or
+[deno.land](https://deno.land/x/fibonacci).
 
 ## Usage
 
@@ -20,8 +21,7 @@ and
 [fibonacciSequence](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L15).
 
 ```typescript
-import {
-  fibonacci,
+import fibonacci, {
   fibonacciSequence,
 } from "https://deno.land/x/fibonacci/mod.ts";
 
