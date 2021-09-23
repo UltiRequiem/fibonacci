@@ -41,6 +41,8 @@ deno install https://deno.land/x/fibonacci/cli.ts
 
 For more info check [this](https://deno.land/manual/tools/script_installer).
 
+You can also get a binary from [releases](https://github.com/UltiRequiem/deno-clear/releases/latest).
+
 #### Usage
 
 - If you just run the command, it will print all the commands available:
