@@ -13,22 +13,18 @@ function Exec() {
 For more help check https://github.com/UltiRequiem/fibonacci-deno`;
 
     console.log(helpMessage);
-
-    return;
   }
 
   if (number && sequence) {
     console.log("You can't use number and sequence flag at the same time!");
-    return;
   }
 
   if (number) {
     console.log(fibonacci(number));
-    return;
   }
 
   if (sequence) {
-    console.log(fibonacciSequence(sequence));
+    console.table(fibonacciSequence(sequence));
   }
 }
 
