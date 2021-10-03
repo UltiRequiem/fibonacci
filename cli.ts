@@ -1,8 +1,8 @@
-import { parse } from "https://deno.land/std/flags/mod.ts";
+import { parse } from "https://deno.land/std@0.109.0/flags/mod.ts";
 
 import fibonacci, { fibonacciSequence } from "./mod.ts";
 
-function Exec() {
+async function main() {
   const { number, sequence, help } = parse(Deno.args);
 
   if (!number && !sequence || help) {
@@ -20,14 +20,15 @@ For more help check https://github.com/UltiRequiem/fibonacci-deno`;
   }
 
   if (number) {
-    console.log(fibonacci(number));
+    console.log(await fibonacci(number));
   }
 
   if (sequence) {
-    console.table(fibonacciSequence(sequence));
+    const numbers = await fibonacciSequence(sequence);
+    numbers.forEach((num) => console.log(num));
   }
 }
 
 if (import.meta.main) {
-  Exec();
+  main();
 }

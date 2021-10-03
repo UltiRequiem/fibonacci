@@ -15,18 +15,19 @@ You can get this package by [nest.land](https://nest.land/package/fibonacci) or
 
 ## Usage
 
-This package exposes two Functions,
-[fibonacci](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L1)
-and
-[fibonacciSequence](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L15).
+This package exposes four functions,
+[fibonacci](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L6),
+[fibonacciSequence](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L15),
+[fibonacciSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L24) and
+[fibonacciSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L43).
 
 ```typescript
 import fibonacci, {
   fibonacciSequence,
 } from "https://deno.land/x/fibonacci/mod.ts";
 
-console.log(fibonacci(9)); // 34
-console.log(fibonacciSequence(4)); // [ 0, 1, 1, 2]
+console.log(await fibonacci(9)); // 34
+console.log(await fibonacciSequence(4)); // [ 0, 1, 1, 2]
 ```
 
 ### CLI Tool
