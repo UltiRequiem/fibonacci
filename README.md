@@ -32,6 +32,8 @@ console.log(await fibonacci(9)); // 34
 console.log(await fibonacciSequence(4)); // [ 0, 1, 1, 2]
 ```
 
+Check the [tests](./mod_test.ts) for more examples.
+
 ### CLI Tool
 
 This project contains a cli tool, it is made to give an example of use mainly.

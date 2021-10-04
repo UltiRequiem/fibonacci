@@ -1,4 +1,4 @@
-import { fiboIterativeSync as fibo } from "./iterative.ts";
+import { fibonacciIterativeSync as fibo } from "./iterative.ts";
 
 /**
  * Return an Array with the first N numbers of the Fibonacci Sequence
