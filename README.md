@@ -16,12 +16,12 @@ You can get this package by [nest.land](https://nest.land/package/fibonacci) or
 ## Usage
 
 This package exposes six functions,
-[fibonacci](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L6),
-[fibonacciIterativeSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L15),
-[fibonacciRecursive](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L24),
-[fibonacciRecursiveSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L43),
-[fibonacciSequence]() and
-[fibonacciSequenceSync]().
+[fibonacci](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/iterative.ts#L6),
+[fibonacciIterativeSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/iterative.ts#L15),
+[fibonacciRecursive](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/recursion.ts#L6),
+[fibonacciRecursiveSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/recursion.ts#L15),
+[fibonacciSequence](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/sequence.ts#L8) and
+[fibonacciSequenceSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/sequence.ts#L17).
 
 ```typescript
 import fibonacci, {
