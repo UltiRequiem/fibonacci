@@ -1,4 +1,4 @@
-import { assertEquals } from "./test_deps.ts";
+import { assertEquals, assertThrows } from "./test_deps.ts";
 import fibonacci, {
   fibonacciIterativeSync,
   fibonacciRecursive,
@@ -13,6 +13,14 @@ Deno.test("Test Fibonacci", async () => {
 
 Deno.test("Test Fibonacci Iterative Sync", () => {
   assertEquals(fibonacciIterativeSync(4), 3);
+});
+
+Deno.test("Test Fibonacci Iterative Sync Error", () => {
+  assertThrows(() => fibonacciIterativeSync(-4));
+});
+
+Deno.test("Test Fibonacci Recursive Sync Error", () => {
+  assertThrows(() => fibonacciRecursiveSync(-4));
 });
 
 Deno.test("Test Fibonacci Recursive", async () => {
