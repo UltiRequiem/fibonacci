@@ -15,11 +15,13 @@ You can get this package by [nest.land](https://nest.land/package/fibonacci) or
 
 ## Usage
 
-This package exposes four functions,
-[fibonacci](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L6),
-[fibonacciSequence](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L15),
-[fibonacciSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L24) and
-[fibonacciSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/mod.ts#L43).
+This package exposes six functions,
+[fibonacci](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/iterative.ts#L6),
+[fibonacciIterativeSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/iterative.ts#L15),
+[fibonacciRecursive](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/recursion.ts#L6),
+[fibonacciRecursiveSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/recursion.ts#L15),
+[fibonacciSequence](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/sequence.ts#L8) and
+[fibonacciSequenceSync](https://github.com/UltiRequiem/fibonacci-deno/blob/main/src/sequence.ts#L17).
 
 ```typescript
 import fibonacci, {
@@ -29,6 +31,8 @@ import fibonacci, {
 console.log(await fibonacci(9)); // 34
 console.log(await fibonacciSequence(4)); // [ 0, 1, 1, 2]
 ```
+
+Check the [tests](./mod_test.ts) for more examples.
 
 ### CLI Tool
 

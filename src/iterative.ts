@@ -3,8 +3,8 @@
  * @param n The Nth Fibonacci Number you want to get
  * @returns The Nth Fibonacci Number
  */
-export function fibonacci(n: number): Promise<number> {
-  return Promise.resolve(fiboIterativeSync(n));
+export function fibonacciIterative(n: number): Promise<number> {
+  return Promise.resolve(fibonacciIterativeSync(n));
 }
 
 /**
@@ -12,9 +12,9 @@ export function fibonacci(n: number): Promise<number> {
  * @param n The Nth Fibonacci Number you want to get
  * @returns The Nth Fibonacci Number
  */
-export function fiboIterativeSync(n: number) {
-  if (fiboIterativeSync.cache[n] !== undefined) {
-    return fiboIterativeSync.cache[n];
+export function fibonacciIterativeSync(n: number) {
+  if (fibonacciIterativeSync.cache[n] !== undefined) {
+    return fibonacciIterativeSync.cache[n];
   }
 
   if (n < 0) {
@@ -27,7 +27,7 @@ export function fiboIterativeSync(n: number) {
     [a, b] = [b, a + b];
   }
 
-  return fiboIterativeSync.cache[n] = a;
+  return fibonacciIterativeSync.cache[n] = a;
 }
 
-fiboIterativeSync.cache = [0, 1, 1];
+fibonacciIterativeSync.cache = [0, 1, 1];
