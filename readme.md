@@ -1,7 +1,7 @@
 # Fibonacci
 
-[![codecov](https://codecov.io/gh/ultirequiem/timezones/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/timezones)
-[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/timezones/mod.ts)
+[![codecov](https://codecov.io/gh/ultirequiem/fibonacci.js/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/fibonacci.js)
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/fibonacci/mod.ts)
 
 Fibonacci Succession
 
@@ -9,17 +9,19 @@ Fibonacci Succession
 
 The API is the same on all this platforms ✔️
 
-### [Deno 🦕](https://deno.land/x/REPO)
+### [Deno 🦕](https://deno.land/x/fibonacci)
 
-``javascript
-import { randomTimeZone } from "https://deno.land/x/REPO/mod.ts";
+```javascript
+import { fibonacci } from "https://deno.land/x/fibonacci/mod.ts";
 
-console.log(`My timezone is ${randomTimeZone()}`);
-``
+fibonacci(10); //=> 55
+```
 
-### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/REPO)
+### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/fibonacci)
 
-`javascript import { timeZones } from "@ultirequiem/REPO"; `
+```javascript
+import { fibonacci } from "@ultirequiem/fibonacci";
+```
 
 ### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
 
@@ -47,16 +49,18 @@ my work 🙏
 
 Don't forget to start the repo ⭐
 
+## Authors
+
 [Eliaz Bobadilla](https://ultirequiem.com) - Creator and Maintainer 💪
 
 See also the full list of
-[contributors](https://github.com/UltiRequiem/timezones/contributors) who
+[contributors](https://github.com/UltiRequiem/fibonacci.js/contributors) who
 participated in this project ✨
 
 ## Versioning
 
 We use [Semantic Versioning](http://semver.org). For the versions available, see
-the [tags](https://github.com/UltiRequiem/timezones/tags) 🏷️
+the [tags](https://github.com/UltiRequiem/fibonacci.js/tags) 🏷️
 
 ## Licence
 
