@@ -1,3 +1,13 @@
-export { fibonacciIterativeSync, fibonacciIterative as default } from "./src/iterative.ts";
-export { fibonacciRecursive, fibonacciRecursiveSync } from "./src/recursion.ts";
-export { fibonacciSequence, fibonacciSequenceSync } from "./src/sequence.ts";
+export function fibonacci(n: number) {
+  if (n < 0) {
+    throw new Error(`Expected a number bigger than zero, but got ${n}.`);
+  }
+
+  let [a, b] = [0, 1];
+
+  for (let i = 0; i < n; i++) {
+    [a, b] = [b, a + b];
+  }
+
+  return a;
+}
