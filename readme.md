@@ -35,7 +35,8 @@ Eg 👉
 
 ## Documentation
 
-Is hosted on [Deno Doc](https://doc.deno.land/https://deno.land/x/fibonacci/mod.ts) 📄
+Is hosted on
+[Deno Doc](https://doc.deno.land/https://deno.land/x/fibonacci/mod.ts) 📄
 
 ## Support
 
