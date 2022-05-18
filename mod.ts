@@ -3,7 +3,7 @@ export function fibonacci(top: number) {
 
   let [starter, second] = [0, 1];
 
-  for (let index = 0; index <= top; index++) {
+  for (let index = 1; index < top; index++) {
     [starter, second] = [second, starter + second];
   }
 
