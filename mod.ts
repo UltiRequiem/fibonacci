@@ -54,8 +54,12 @@ export function* lazyFibonacc(n: number) {
  * @private
  * Throws if the number is lower than zero.
  */
-function biggerThanZero(num: number) {
-  if (num < 0) {
-    throw new Error(`Expected a number bigger than zero, but got ${num}.`);
+function biggerThanZero(number: number) {
+  if (typeof number !== "number") {
+    throw new TypeError(`Exepected a number, but got ${typeof number}.`);
+  }
+
+  if (number === 0 || number < 0) {
+    throw new Error(`Expected a number bigger than zero, but got ${number}.`);
   }
 }
