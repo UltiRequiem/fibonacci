@@ -14,7 +14,7 @@ The API is the same on all this platforms ✔️
 ```javascript
 import { fibonacci } from "https://deno.land/x/fibonacci/mod.ts";
 
-fibonacci(10); //=> 34
+fibonacci(10); //=> 55
 ```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/fibonacci)
