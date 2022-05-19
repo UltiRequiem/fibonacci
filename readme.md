@@ -3,7 +3,9 @@
 [![codecov](https://codecov.io/gh/ultirequiem/fibonacci.js/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/fibonacci.js)
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/fibonacci/mod.ts)
 
-[Fibonacci Succession](https://en.wikipedia.org/wiki/Fibonacci_number)
+Compute the
+[Fibonacci Succession](https://en.wikipedia.org/wiki/Fibonacci_number) and NTH
+Fibonacci Number.
 
 ## Usage
 
