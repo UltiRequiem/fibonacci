@@ -19,11 +19,12 @@ export function* fibonacciSequence(top: number) {
   let current = 1;
 
   for (let index = 0; index < top; index++) {
-    current = second;
-
     yield current;
 
+    current = second;
+
     second = first + second;
+
     first = current;
   }
 }
