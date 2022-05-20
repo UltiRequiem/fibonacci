@@ -8,29 +8,23 @@ export function fibonacci(top: number) {
   return result[result.length - 1];
 }
 
-export function* fibonacciSequence(n: number) {
-  biggerThanZero(n);
+export function* fibonacciSequence(top: number) {
+  biggerThanZero(top);
 
   let first = 0;
   let second = 1;
 
   yield first;
 
-  const top = n - 1;
-
   let current = 1;
 
-  let count = 0;
-
-  while (count <= top) {
+  for (let index = 0; index < top; index++) {
     current = second;
 
     yield current;
 
     second = first + second;
     first = current;
-
-    count++;
   }
 }
 
