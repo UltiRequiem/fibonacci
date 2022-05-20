@@ -19,7 +19,7 @@ export function* fibonacciSequence(top: number) {
   let current = 1;
 
   for (let index = 0; index < top; index++) {
-    yield current;
+    yield second;
 
     current = second;
 
