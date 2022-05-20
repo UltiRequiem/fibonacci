@@ -30,8 +30,9 @@ for (const fiboNumber of fibonacciSequence(9)) {
   console.log(fiboNumber);
 }
 
+const favoritesNums = [...fibonacciSequence(3)];
+
 console.log(`My favorites numbers are ${[...fibonacciSequence(3)]}.`);
-// "My favorites numbers are 0,1,1,2."
 ```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/fibonacci)
