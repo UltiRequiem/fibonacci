@@ -7,5 +7,5 @@ buildPackage({
   homepage: "https://ulti.js.org/fibonacci",
   keywords: ["fibonacci", "math"],
   license: "MIT",
-  version: "1.3.0",
+  version: "1.3.1",
 });

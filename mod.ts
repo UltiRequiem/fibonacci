@@ -9,7 +9,7 @@ export function fibonacci(top: number) {
 }
 
 export function* fibonacciSequence(top: number) {
-  biggerThanZero(top);
+  positiveNumber(top);
 
   let first = 0;
   let second = 1;
@@ -34,7 +34,7 @@ export function* fibonacciSequence(top: number) {
  *
  * @private
  */
-function biggerThanZero(numberToTest: number) {
+function positiveNumber(numberToTest: unknown): asserts numberToTest is number {
   if (typeof numberToTest !== "number") {
     throw new TypeError("Exepected a number.");
   }

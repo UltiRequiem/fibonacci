@@ -23,15 +23,13 @@ fibonacci(10); //=> 55
 
 fibonacci(5); //=> 5
 
-console.log("First 10 Fibonacci Numbers");
-
-// It is a generator function
+// First 10 Fibonacci Numbers
 for (const fiboNumber of fibonacciSequence(9)) {
   console.log(fiboNumber);
 }
 
 console.log(`My favorites numbers are ${[...fibonacciSequence(3)]}.`);
-// "My favorites numbers are 0,1,1,2."
+//=> "My favorites numbers are 0,1,1,2."
 ```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/fibonacci)
