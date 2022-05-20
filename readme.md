@@ -14,7 +14,10 @@ The API is the same on all this platforms ✔️
 ### [Deno 🦕](https://deno.land/x/fibonacci)
 
 ```javascript
-import { fibonacci } from "https://deno.land/x/fibonacci/mod.ts";
+import {
+  fibonacci,
+  fibonacciSequence,
+} from "https://deno.land/x/fibonacci/mod.ts";
 
 fibonacci(10); //=> 55
 
@@ -22,14 +25,14 @@ fibonacci(5); //=> 5
 
 console.log("First 10 Fibonacci Numbers");
 
-// Is a Generator Function
+// It is a generator function
 for (const fiboNumber of fibonacciSequence(9)) {
   console.log(fiboNumber);
 }
 
 const favoritesNums = [...fibonacciSequence(3)];
 
-console.log(`My favorites numbers are ${favoritesNums}.`);
+console.log(`My favorites numbers are ${[...fibonacciSequence(3)]}.`);
 ```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/fibonacci)

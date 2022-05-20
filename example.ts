@@ -10,6 +10,4 @@ for (const fiboNumber of fibonacciSequence(9)) {
   console.log(fiboNumber);
 }
 
-const favoritesNums = [...fibonacciSequence(3)];
-
-console.log(`My favorites numbers are ${favoritesNums}.`);
+console.log(`My favorites numbers are ${[...fibonacciSequence(3)]}.`);
