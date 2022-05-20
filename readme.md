@@ -17,12 +17,25 @@ The API is the same on all this platforms ✔️
 import { fibonacci } from "https://deno.land/x/fibonacci/mod.ts";
 
 fibonacci(10); //=> 55
+
+fibonacci(5); //=> 5
+
+console.log("First 10 Fibonacci Numbers");
+
+// Is a Generator Function
+for (const fiboNumber of fibonacciSequence(9)) {
+  console.log(fiboNumber);
+}
+
+const favoritesNums = [...fibonacciSequence(3)];
+
+console.log(`My favorites numbers are ${favoritesNums}.`);
 ```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/fibonacci)
 
 ```javascript
-import { fibonacci } from "@ultirequiem/fibonacci";
+import { fibonacci, fibonacciSequence } from "@ultirequiem/fibonacci";
 ```
 
 ### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
