@@ -3,7 +3,7 @@ import {
   assertThrows,
 } from "https://deno.land/std@0.137.0/testing/asserts.ts";
 
-import { fibonacci, fibonacciSequenceList } from "./mod.ts";
+import { fibonacci, fibonacciSequence } from "./mod.ts";
 
 // Taken from https://wikipedia.org/wiki/Fibonacci_number
 const fibonacciSequenceStart = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
@@ -28,8 +28,23 @@ Deno.test("fibonacci", () => {
   }, RangeError);
 });
 
-Deno.test("fibonacciSequenceList", () => {
-  const result = fibonacciSequenceList(fibonacciSequenceStart.length);
+Deno.test("fibonacciSequence", () => {
+  assertEquals(
+    [...fibonacciSequence(fibonacciSequenceStart.length - 1)],
+    fibonacciSequenceStart,
+  );
 
-  assertEquals(result, fibonacciSequenceStart);
+  /* assertThrows(() => {
+    // @ts-ignore: It should throw
+    fibonacciSequence("hello");
+
+    // @ts-ignore: It should throw
+    fibonacciSequence(new Set([1, 2, 3, 4, 5]));
+  }, TypeError);
+
+  assertThrows(() => {
+    fibonacciSequence(-3);
+
+    fibonacciSequence(-25);
+  }, RangeError); */
 });

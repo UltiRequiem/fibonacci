@@ -4,7 +4,7 @@
  * @param top The NTH Fibonacci Number.
  */
 export function fibonacci(top: number) {
-  const result = fibonacciSequenceList(top + 1);
+  const result = [...fibonacciSequence(top)];
   return result[result.length - 1];
 }
 
@@ -16,7 +16,7 @@ export function* fibonacciSequence(n: number) {
 
   yield first;
 
-  const top = n - 2;
+  const top = n - 1;
 
   let current = 1;
 
@@ -32,10 +32,6 @@ export function* fibonacciSequence(n: number) {
 
     count++;
   }
-}
-
-export function fibonacciSequenceList(top: number) {
-  return [...fibonacciSequence(top)];
 }
 
 /**
