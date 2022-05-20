@@ -1,7 +1,11 @@
-import { fibonacci } from "./mod.ts";
-
-import { randomNumber } from "https://deno.land/x/random_number@0.1.1/mod.ts";
+import { fibonacci, fibonacciSequence } from "./mod.ts";
 
 Deno.bench("fibonacci", () => {
-  fibonacci(randomNumber());
+  fibonacci(78);
+});
+
+Deno.bench("fibonacciSequence", () => {
+  for (const _fibo of fibonacciSequence(78)) {
+    // Pass
+  }
 });
