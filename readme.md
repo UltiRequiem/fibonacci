@@ -1,7 +1,7 @@
 # Fibonacci
 
-[![codecov](https://codecov.io/gh/ultirequiem/fibonacci.js/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/fibonacci.js)
-[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/fibonacci/mod.ts)
+[![Code Coverage](https://codecov.io/gh/ultirequiem/fibonacci/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/fibonacci)
+[![Deno Docs](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/fibonacci/mod.ts)
 
 Compute the
 [Fibonacci Succession](https://en.wikipedia.org/wiki/Fibonacci_number) and NTH
