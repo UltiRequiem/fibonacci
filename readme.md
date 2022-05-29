@@ -53,6 +53,11 @@ Eg 👉
 Is hosted on
 [Deno Doc](https://doc.deno.land/https://deno.land/x/fibonacci/mod.ts) 📄
 
+## Usage Example
+
+- [Fibonacci App](https://github.com/UltiRequiem/fibonacci-app): Preact +
+  Tailwind Web App
+
 ## Support
 
 Open an Issue, I will check it a soon as possible 👀
