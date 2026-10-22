@@ -1,7 +1,7 @@
 {
   "name": "@ultirequiem/fibonacci",
   "version": "0.0.0-development",
-  "description": "🔢 Fibonacci Succession Utilities + CLI Tool",
+  "description": "Fibonacci numbers and sequences.",
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,8 +18,11 @@
     "node": ">=20"
   },
   "keywords": [
+    "math",
+    "sequence",
     "fibonacci",
-    "math"
+    "esm",
+    "typescript"
   ],
   "license": "MIT",
   "homepage": "https://ulti.js.org/fibonacci",
