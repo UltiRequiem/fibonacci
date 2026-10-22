@@ -1,4 +1,4 @@
-import { fibonacci, fibonacciSequence } from "./mod.ts";
+import { fibonacci, fibonacciSequence } from "../src/index.js";
 
 Deno.bench("fibonacci", () => {
   fibonacci(78);

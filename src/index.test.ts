@@ -1,50 +1,46 @@
-import {
-  assertEquals,
-  assertThrows,
-} from "https://deno.land/std@0.224.0/testing/asserts.ts";
+import { expect, it } from "vitest";
 
-import { fibonacci, fibonacciSequence } from "./mod.ts";
+import { fibonacci, fibonacciSequence } from "./index.js";
 
 // Taken from https://wikipedia.org/wiki/Fibonacci_number
 const fibonacciSequenceStart = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
 
-Deno.test("fibonacci", () => {
+it("fibonacci", () => {
   for (let index = 0; index < fibonacciSequenceStart.length; index++) {
-    assertEquals(fibonacci(index), fibonacciSequenceStart[index]);
+    expect(fibonacci(index)).toEqual(fibonacciSequenceStart[index]);
   }
 
-  assertThrows(() => {
+  expect(() => {
     // @ts-ignore: It should throw
     fibonacci("hello");
 
     // @ts-ignore: It should throw
     fibonacci(new Set([1, 2, 3, 4, 5]));
-  }, TypeError);
+  }).toThrow(TypeError);
 
-  assertThrows(() => {
+  expect(() => {
     fibonacci(-3);
 
     fibonacci(-25);
-  }, RangeError);
+  }).toThrow(RangeError);
 });
 
-Deno.test("fibonacciSequence", () => {
-  assertEquals(
-    [...fibonacciSequence(fibonacciSequenceStart.length - 1)],
+it("fibonacciSequence", () => {
+  expect([...fibonacciSequence(fibonacciSequenceStart.length - 1)]).toEqual(
     fibonacciSequenceStart,
   );
 
-  /* assertThrows(() => {
+  /* expect(() => {
     // @ts-ignore: It should throw
     fibonacciSequence("hello");
 
     // @ts-ignore: It should throw
     fibonacciSequence(new Set([1, 2, 3, 4, 5]));
-  }, TypeError);
+  }).toThrow(TypeError);
 
-  assertThrows(() => {
+  expect(() => {
     fibonacciSequence(-3);
 
     fibonacciSequence(-25);
-  }, RangeError); */
+  }).toThrow(RangeError); */
 });
