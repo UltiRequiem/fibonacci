@@ -1,12 +1,13 @@
 # Fibonacci
 
-Compute the
+Fibonacci numbers and sequences.
 
 [![npm](https://img.shields.io/npm/v/@ultirequiem/fibonacci?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/fibonacci)
 [![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/fibonacci?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/fibonacci)
 [![CI](https://github.com/UltiRequiem/fibonacci/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/fibonacci/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/UltiRequiem/fibonacci/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/fibonacci)
 
+Compute the
 [Fibonacci Succession](https://en.wikipedia.org/wiki/Fibonacci_number) and NTH
 Fibonacci Number.
 
