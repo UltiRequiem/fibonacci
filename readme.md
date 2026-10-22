@@ -17,9 +17,7 @@ npm install @ultirequiem/fibonacci
 
 ## Usage
 
-The API is the same on all these platforms ✔️
-
-### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/fibonacci)
+ESM only: the same import works in Node.js, Bun and browsers.
 
 ```javascript
 import {
@@ -39,16 +37,6 @@ for (const fiboNumber of fibonacciSequence(9)) {
 console.log(`My favorites numbers are ${[...fibonacciSequence(3)]}.`);
 //=> "My favorites numbers are 0,1,1,2."
 ```
-
-### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
-
-You can use any [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) 🔥
-
-Eg 👉
-[ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) ↔️
-[SkyPack](https://cdn.skypack.dev/@ultirequiem/random-item) 🆚
-[Script Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
-↔️ [JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/random-item)
 
 ## Usage Example
 
