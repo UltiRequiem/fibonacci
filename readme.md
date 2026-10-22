@@ -50,11 +50,6 @@ Eg 👉
 [Script Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
 ↔️ [JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/random-item)
 
-## Documentation
-
-Is hosted on
-[Deno Doc](https://doc.deno.land/https://deno.land/x/fibonacci/mod.ts) 📄
-
 ## Usage Example
 
 - [Fibonacci App](https://github.com/UltiRequiem/fibonacci-app): Preact +
