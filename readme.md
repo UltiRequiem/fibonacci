@@ -1,23 +1,28 @@
 # Fibonacci
 
 [![Code Coverage](https://codecov.io/gh/ultirequiem/fibonacci/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/fibonacci)
-[![Deno Docs](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/fibonacci/mod.ts)
 
 Compute the
 [Fibonacci Succession](https://en.wikipedia.org/wiki/Fibonacci_number) and NTH
 Fibonacci Number.
 
+## Install
+
+```sh
+npm install @ultirequiem/fibonacci
+```
+
 ## Usage
 
 The API is the same on all this platforms ✔️
 
-### [Deno 🦕](https://deno.land/x/fibonacci)
+### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/fibonacci)
 
 ```javascript
 import {
   fibonacci,
   fibonacciSequence,
-} from "https://deno.land/x/fibonacci/mod.ts";
+} from "@ultirequiem/fibonacci";
 
 fibonacci(10); //=> 55
 
@@ -30,12 +35,6 @@ for (const fiboNumber of fibonacciSequence(9)) {
 
 console.log(`My favorites numbers are ${[...fibonacciSequence(3)]}.`);
 //=> "My favorites numbers are 0,1,1,2."
-```
-
-### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/fibonacci)
-
-```javascript
-import { fibonacci, fibonacciSequence } from "@ultirequiem/fibonacci";
 ```
 
 ### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
@@ -64,9 +63,6 @@ Open an Issue, I will check it a soon as possible 👀
 
 If you want to hurry me up a bit
 [send me a tweet](https://twitter.com/UltiRequiem) 😆
-
-Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
-my work 🙏
 
 Don't forget to start the repo ⭐
 

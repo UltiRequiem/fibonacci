@@ -1,4 +1,4 @@
-import { fibonacci, fibonacciSequence } from "./mod.ts";
+import { fibonacci, fibonacciSequence } from "../src/index.js";
 
 console.log(fibonacci(10)); //=> 55
 

@@ -1,1 +1,3 @@
-cov_profile/
+node_modules/
+lib/
+docs/
